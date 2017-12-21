@@ -1,9 +1,19 @@
 <template>
   <section class="section is-medium has-text-centered">
     <img class="logo" src="~/assets/img/for_the_public_logo.svg">
-    <p class="intro">An initiative in the intersection between society, design and technology</p>
+    <p class="intro">{{ page.intro }}</p>
   </section>
 </template>
+
+<script>
+import page from '~/content/pages/start.json'
+
+export default {
+  data () {
+    return { page }
+  }
+}
+</script>
 
 <style lang="scss">
 .logo {

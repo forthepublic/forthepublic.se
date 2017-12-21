@@ -5,20 +5,17 @@ public_folder: "/images/uploads"
 collections:
   - label: "Pages"
     name: "pages"
-    extension: "md"
-    format: "frontmatter"
     files:
       - label: "Start Page"
         name: "start"
-        file: "content/pages/start.md"
+        file: "content/pages/start.json"
         fields:
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Intro, name: intro, widget: string}
   - label: "News"
     name: "news"
     folder: "content/news"
     create: true
-    extension: "md"
-    format: "frontmatter"
+    format: "json"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
