@@ -1,7 +1,11 @@
 module.exports = {
+  build: {
+    vendor: ['netlify-identity-widget']
+  },
   modules: [
     '@nuxtjs/bulma',
     'nuxtent',
+    'nuxt-netlify-cms',
     ['@nuxtjs/google-analytics', {
       id: 'UA-110410768-1'
     }]
@@ -12,9 +16,6 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ],
-    script: [
-      { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,300i' },

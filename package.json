@@ -8,12 +8,15 @@
   },
   "devDependencies": {
     "@nuxtjs/bulma": "^1.1.0",
+    "netlify-cms": "^1.0.3",
     "node-sass": "^4.7.2",
+    "nuxt-netlify-cms": "^2.0.1",
     "sass-loader": "^6.0.6"
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.0",
     "@nuxtjs/google-analytics": "^2.0.2",
+    "netlify-identity-widget": "^1.4.0",
     "nuxt": "^1.0.0-rc11",
     "nuxtent": "^1.1.0"
   }
