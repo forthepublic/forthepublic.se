@@ -7,10 +7,15 @@
 
 <script>
 import SiteFooter from '~/components/Footer.vue'
+import netlifyIdentity from 'netlify-identity-widget';
 
 export default {
   components: {
     SiteFooter
+  },
+  mounted() {
+    window.netlifyIdentity = netlifyIdentity
+    netlifyIdentity.init()
   }
 }
 </script>
