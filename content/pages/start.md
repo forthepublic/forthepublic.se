@@ -1,3 +1,4 @@
 ---
-intro: An initiative in the intersection between society, design and technology.
+intro: 'An initiative in the intersection between society, design and technology'
 ---
+
