@@ -6,11 +6,18 @@
 </template>
 
 <script>
-import page from '~/content/pages/start.json'
-
 export default {
   data () {
-    return { page }
+    return {
+      page: {
+        intro: ""
+      }
+    }
+  },
+  async asyncData ({ app }) {
+    return {
+      page: await app.$content('/pages').get('/pages/start')
+    }
   }
 }
 </script>

@@ -1,6 +1,7 @@
 module.exports = {
   modules: [
     '@nuxtjs/bulma',
+    'nuxtent',
     ['@nuxtjs/google-analytics', {
       id: 'UA-110410768-1'
     }]
